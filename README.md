@@ -7,7 +7,12 @@ Read or watch:
 * [15 sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)(WARNING: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms)
 * [CS50 Algorithms explanation in detail by David Malan](https://www.youtube.com/watch?v=yb0PY3LX2x8&t=2s)
 * [All about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms)
-## Learning Objectives 
+## Mendatory Task Resources:youtube:
+* Task 0: [Bubble sort](https://www.youtube.com/watch?v=lyZQPjUT5B4&t=5s)
+* Task 1: [Insertion sort](https://www.youtube.com/watch?v=ROalU379l3U&t=1s)
+* Task 2: [Selection sort](https://www.youtube.com/watch?v=Ns4TPTC8whw&t=1s)
+* Task 3: [Quick sort](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+## Learning Objectives:bulb: 
 At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), without the help of Google:
 ### General 
 * At least four different sorting algorithms
