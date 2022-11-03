@@ -7,7 +7,7 @@ Read or watch:
 * [15 sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)(WARNING: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms)
 * [CS50 Algorithms explanation in detail by David Malan](https://www.youtube.com/watch?v=yb0PY3LX2x8&t=2s)
 * [All about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms)
-## Mendatory Task Resources:video:
+## Mendatory Task Resources
 * Task 0: [Bubble sort](https://www.youtube.com/watch?v=lyZQPjUT5B4&t=5s)
 * Task 1: [Insertion sort](https://www.youtube.com/watch?v=ROalU379l3U&t=1s)
 * Task 2: [Selection sort](https://www.youtube.com/watch?v=Ns4TPTC8whw&t=1s)
@@ -127,3 +127,11 @@ Please, note this format is used for Quiz and Task questions.
 Please use the “short” notation (don’t use constants). Example: O(nk) or O(wn) should be written O(n). If an answer is required within a file, all your answers files must have a newline at the end.
 ### Tests
 Here is a quick tip to help you test your sorting algorithms with big sets of random integers: [Random.org](https://www.random.org/integer-sets/)
+
+---
+
+### Author 
+* **Mpilo Mafu**
+- [GitHub](https://github.com/MpiloNM95)
+- [Linkedin](https://www.linkedin.com/in/mpilo-mafu-aaa7b6185/)
+- [Twitter](https://twitter.com/Mpilo_Mafu_)
