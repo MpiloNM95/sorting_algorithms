@@ -7,7 +7,7 @@ Read or watch:
 * [15 sorting algorithms in 6 minutes](https://www.youtube.com/watch?v=kPRA0W1kECg)(WARNING: The following video can trigger seizure/epilepsy. It is not required for the project, as it is only a funny visualization of different sorting algorithms)
 * [CS50 Algorithms explanation in detail by David Malan](https://www.youtube.com/watch?v=yb0PY3LX2x8&t=2s)
 * [All about sorting algorithms](https://www.geeksforgeeks.org/sorting-algorithms)
-## Mendatory Task Resources:youtube:
+## Mendatory Task Resources:video:
 * Task 0: [Bubble sort](https://www.youtube.com/watch?v=lyZQPjUT5B4&t=5s)
 * Task 1: [Insertion sort](https://www.youtube.com/watch?v=ROalU379l3U&t=1s)
 * Task 2: [Selection sort](https://www.youtube.com/watch?v=Ns4TPTC8whw&t=1s)
