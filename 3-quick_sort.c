@@ -30,5 +30,17 @@ void quick_sort_rec(int *array_init, size_t size_init, int *array, size_t size)
 				}
 			}
 		}
+		aux2 = size;
+		if (aux2 - 1 != i + 1 && array[aux2 - 1] != array[i + 1])
+		{
+			array[size - 1] = array[i + 1];
+			array[i + 1] = pivot;
+			print_array(array_init, size_init);
+		}
+		if (i > 0)
+		{
+			quick_sort_rec(array_init, size_init, array, i + 1);
+		}
+		quick_sort_rec(array_init, size_init, array + i + 2,  size - (i + 2));
 	}
 }
