@@ -44,3 +44,21 @@ void quick_sort_rec(int *array_init, size_t size_init, int *array, size_t size)
 		quick_sort_rec(array_init, size_init, array + i + 2,  size - (i + 2));
 	}
 }
+/**
+ * quick_sort - sorts an array of integers in ascending order using
+ * the Selection sort algorithm
+ * @array: pointer to array
+ * @size: size of the array
+ */
+void quick_sort(int *array, size_t size)
+{
+	int *array_init;
+	size_t size_init;
+
+	if (array)
+	{
+		array_init = array;
+		size_init = size;
+		quick_sort_rec(array_init, size_init, array, size);
+	}
+}
