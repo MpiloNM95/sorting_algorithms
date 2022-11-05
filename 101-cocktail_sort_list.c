@@ -40,5 +40,17 @@ void cocktail_sort_list(listint_t **list)
 		return;
 
 	temp = *list;
-
+	do {
+		swapped_f = swapped_b = false;
+		for (checks = 0; temp->next && checks < shake_range; checks++)
+		{
+			if (temp->next->n < temp->n)
+			{
+				dll_adj_swap(list, temp, temp->next);
+				swapped_f = true;
+			}
+			else
+				temp = temp->next;
+		}
+	}
 }
