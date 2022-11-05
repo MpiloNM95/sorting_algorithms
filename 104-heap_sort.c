@@ -40,3 +40,33 @@ void check_tree(int *array, size_t size_init, size_t size, size_t i)
 	if (br2 < size - 1)
 		check_tree(array, size_init, size, br2);
 }
+
+/**
+ * heap_sort - sorts an array of integers
+ * in ascending order using the Heap
+ * sort algorithm
+ * @array: pointer to array
+ * @size: size of the pointer
+ *
+**/
+void heap_sort(int *array, size_t size)
+{
+	size_t i, size_init = size;
+	int n;
+
+	if (!array)
+		return;
+	for (i = 0; i < size / 2 ; i++)
+	{
+		check_tree(array, size_init, size, size / 2 - 1 - i);
+	}
+	for (i = 0; i < size_init - 1; i++)
+	{
+		n = array[0];
+		array[0] = array[size - 1 - i];
+		array[size - 1 - i] = n;
+		print_array(array, size_init);
+		check_tree(array, size_init, size - i - 1, 0);
+	}
+
+}
