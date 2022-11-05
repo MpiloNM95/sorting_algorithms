@@ -94,3 +94,26 @@ void TopDownSplitMerge(int *source, int iBeg, int iEnd, int *dest)
 	/* merge the resulting runs from array[] into work_copy[] */
 	TopDownMerge(source, iBeg, iMid, iEnd, dest);
 }
+
+/**
+ * merge_sort - sorts an array of integers in ascending order using a
+ * top-down merge sort algorithm
+ * @array: array of integers to be sorted
+ * @size: amount of elements in array
+ */
+void merge_sort(int *array, size_t size)
+{
+	int *work_copy;
+
+	if (!array || size < 2)
+		return;
+
+	work_copy = malloc(sizeof(int) * size);
+	if (!work_copy)
+		return;
+
+	CopyArray(array, 0, size, work_copy);
+	TopDownSplitMerge(work_copy, 0, size, array);
+
+	free(work_copy);
+}
