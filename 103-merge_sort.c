@@ -71,3 +71,26 @@ void TopDownMerge(int *source, int iBeg, int iMid, int iEnd, int *dest)
 	printf("[Done]: ");
 	PrintArray(dest, iBeg, iEnd);
 }
+
+/**
+ * TopDownSplitMerge - recursive engine of merge_sort, splits working copy of
+ * array into left and right runs, then merges with TopDownMerge
+ * @source: array of integers to be sorted
+ * @iBeg: starting index value
+ * @iEnd: ending index value
+ * @dest: array to store sorted integers
+ */
+void TopDownSplitMerge(int *source, int iBeg, int iEnd, int *dest)
+{
+	int iMid;
+
+	if (iEnd - iBeg < 2) /* if run size == 1 */
+		return;     /* consider it sorted */
+	/* split the run longer than 1 item into halves */
+	iMid = (iEnd + iBeg) / 2;
+
+	TopDownSplitMerge(dest, iBeg, iMid, source);  /* sort left run */
+	TopDownSplitMerge(dest, iMid, iEnd, source);  /* sort right run */
+	/* merge the resulting runs from array[] into work_copy[] */
+	TopDownMerge(source, iBeg, iMid, iEnd, dest);
+}
