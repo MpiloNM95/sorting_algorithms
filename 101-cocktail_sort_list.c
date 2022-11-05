@@ -52,5 +52,22 @@ void cocktail_sort_list(listint_t **list)
 			else
 				temp = temp->next;
 		}
-	}
+		if (!temp->next)  /* first loop, measuring list */
+			shake_range = checks;
+		if (swapped_f)
+			temp = temp->prev;
+		shake_range--;
+		for (checks = 0; temp->prev && checks < shake_range; checks++)
+		{
+			if (temp->n < temp->prev->n)
+			{
+				dll_adj_swap(list, temp->prev, temp);
+				swapped_b = true;
+			}
+			else
+				temp = temp->prev;
+		}
+		if (swapped_b)
+			temp = temp->next;
+	} while (swapped_f || swapped_b);
 }
