@@ -24,3 +24,21 @@ void dll_adj_swap(listint_t **list, listint_t *left, listint_t *right)
 
 	print_list(*list);
 }
+
+/** 
+ * cocktail_sort_list - sorts a doubly linked list of integers in ascending
+ * order using an cocktail shaker sort algorithm
+ * @list: doubly linked list of integers to be sorted
+ */
+void cocktail_sort_list(listint_t **list)
+{
+	bool swapped_f, swapped_b;
+	int shake_range = 1000000, checks;
+	listint_t *temp;
+
+	if (!list || !(*list) || !(*list)->next)
+		return;
+
+	temp = *list;
+
+}
